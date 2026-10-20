@@ -1,3 +1,4 @@
+
 # Online Maintenance Center & Spare Parts System
 
 This project is a front-end demo website for an automotive maintenance and spare parts business. It includes a clean automotive-focused design, an online maintenance booking flow, a spare-parts catalog, and a demo cart/checkout experience.
@@ -96,3 +97,7 @@ To connect a real backend later, the following areas would need to be implemente
 
 ## Notes
 The project intentionally labels booking, order, and authentication data as demo data throughout the UI. This keeps the experience honest and clearly front-end only.
+
+# AutoCare-Services
+Book maintenance services, shop genuine spare parts, and keep your drive smooth with expert automotive support.
+ 07dd8aa4582cbc1f0b9de10553c8eca322f78cb3
