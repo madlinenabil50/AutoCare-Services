@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5f8fc"/>
+      <stop offset="100%" stop-color="#edf4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <rect x="70" y="70" width="760" height="560" rx="34" fill="#ffffff" stroke="#0d9488" stroke-width="4"/>
+  <text x="450" y="170" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#102a43">Detail Kit</text>
+  <text x="450" y="220" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5c6f86">Care Pack</text>
+
+  <rect x="260" y="200" width="120" height="220" rx="18" fill="#dffcf5" stroke="#0d9488" stroke-width="8"/>
+  <rect x="420" y="210" width="200" height="180" rx="18" fill="#e6f6ff" stroke="#0d9488" stroke-width="8"/>
+  <circle cx="330" cy="300" r="42" fill="#9fe3d7"/>
+  <path d="M420 250 C470 220, 540 220, 590 250 L590 320 C540 350, 470 350, 420 320 Z" fill="#dffcf5" stroke="#0d9488" stroke-width="8"/>
+  <path d="M440 250 L440 390 M560 250 L560 390" stroke="#0d9488" stroke-width="8" stroke-linecap="round"/>
+
+  <g opacity="0.12">
+    <circle cx="150" cy="150" r="70" fill="#0d9488"/>
+    <circle cx="720" cy="520" r="90" fill="#0d9488"/>
+  </g>
+  <rect x="180" y="540" width="540" height="44" rx="22" fill="#0d9488" opacity="0.10"/>
+</svg>

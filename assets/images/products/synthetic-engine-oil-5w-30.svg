@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5f8fc"/>
+      <stop offset="100%" stop-color="#edf4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <rect x="70" y="70" width="760" height="560" rx="34" fill="#ffffff" stroke="#1ca76b" stroke-width="4"/>
+  <text x="450" y="170" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#102a43">Engine Oil</text>
+  <text x="450" y="220" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5c6f86">5W-30</text>
+
+  <rect x="370" y="190" width="160" height="260" rx="22" fill="#fff0b3" stroke="#1ca76b" stroke-width="8"/>
+  <rect x="410" y="120" width="80" height="80" rx="18" fill="#d5f6e8" stroke="#1ca76b" stroke-width="6"/>
+  <rect x="395" y="260" width="110" height="110" rx="14" fill="#c9f3d8" stroke="#1ca76b" stroke-width="6"/>
+  <path d="M450 315 L486 370 L450 425 L414 370 Z" fill="#1ca76b" opacity="0.75"/>
+
+  <g opacity="0.12">
+    <circle cx="150" cy="150" r="70" fill="#1ca76b"/>
+    <circle cx="720" cy="520" r="90" fill="#1ca76b"/>
+  </g>
+  <rect x="180" y="540" width="540" height="44" rx="22" fill="#1ca76b" opacity="0.10"/>
+</svg>

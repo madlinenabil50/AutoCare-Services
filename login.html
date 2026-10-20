@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | AutoCare Pro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <div id="site-navbar"></div>
+  <div class="toast-container position-fixed top-0 end-0 p-3" id="toastContainer"></div>
+
+  <header class="page-header">
+    <div class="container">
+      <h1>Login</h1>
+      <p class="mb-0 text-white-50">Demo authentication only. No secure backend is connected in this front-end project.</p>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-7">
+          <div class="card p-4">
+            <h3 class="mb-4">Welcome back</h3>
+            <form id="loginForm" novalidate>
+              <div class="mb-3">
+                <label class="form-label" for="loginEmail">Email address</label>
+                <input id="loginEmail" class="form-control" type="email" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label" for="loginPassword">Password</label>
+                <div class="password-toggle">
+                  <input id="loginPassword" class="form-control" type="password" required />
+                  <button type="button" class="toggle-btn" data-password-toggle="loginPassword"><i class="bi bi-eye"></i></button>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary w-100 mb-3">Login to demo account</button>
+              <p class="text-center mb-0">Need an account? <a href="register.html">Register now</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/auth-demo.js"></script>
+  <script src="js/common.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('loginForm');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        const email = document.getElementById('loginEmail').value.trim();
+        const password = document.getElementById('loginPassword').value;
+        const users = window.getStorage('omc_demo_users', []);
+        const user = users.find((entry) => entry.email.toLowerCase() === email.toLowerCase());
+
+        if (!email || !password) {
+          window.showNotification('Email and password are required.', 'error');
+          return;
+        }
+
+        if (!user) {
+          window.showNotification('No matching demo account was found. Please register first.', 'error');
+          return;
+        }
+
+        if (user.passwordHash && user.passwordHash !== 'demo-hash') {
+          window.showNotification('This demo login uses a local-only session. Please use the sample account created in the registration flow.', 'warning');
+        }
+
+        const session = { name: user.name, email: user.email, phone: user.phone };
+        window.setStorage('omc_demo_session', session);
+        window.showNotification('Demo login successful.', 'success');
+        setTimeout(() => {
+          window.location.href = 'my-account.html';
+        }, 800);
+      });
+
+      document.querySelectorAll('[data-password-toggle]').forEach((button) => {
+        button.addEventListener('click', function () {
+          const target = document.getElementById(button.getAttribute('data-password-toggle'));
+          const isPassword = target.type === 'password';
+          target.type = isPassword ? 'text' : 'password';
+          button.innerHTML = isPassword ? '<i class="bi bi-eye-slash"></i>' : '<i class="bi bi-eye"></i>';
+        });
+      });
+    });
+  </script>
+</body>
+</html>

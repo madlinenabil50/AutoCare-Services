@@ -1,0 +1,23 @@
+@media (max-width: 576px) {
+  .hero-card {
+    padding: 1rem;
+  }
+
+  .btn,
+  .form-control,
+  .form-select {
+    width: 100%;
+  }
+
+  .navbar-nav {
+    margin-top: 0.8rem;
+  }
+
+  .filter-bar .row > * {
+    margin-bottom: 0.8rem;
+  }
+
+  .product-card img {
+    height: 180px;
+  }
+}

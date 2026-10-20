@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5f8fc"/>
+      <stop offset="100%" stop-color="#edf4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <rect x="70" y="70" width="760" height="560" rx="34" fill="#ffffff" stroke="#6c85ff" stroke-width="4"/>
+  <text x="450" y="170" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#102a43">Cabin Air Filter</text>
+  <text x="450" y="220" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5c6f86">HVAC</text>
+
+  <rect x="250" y="220" width="400" height="220" rx="26" fill="#edf5ff" stroke="#6c85ff" stroke-width="8"/>
+  <rect x="300" y="255" width="300" height="150" rx="16" fill="#ffffff" stroke="#6c85ff" stroke-width="6"/>
+  <path d="M320 295 H580 M320 340 H580 M320 385 H580" stroke="#6c85ff" stroke-width="12" stroke-linecap="round"/>
+
+  <g opacity="0.12">
+    <circle cx="150" cy="150" r="70" fill="#6c85ff"/>
+    <circle cx="720" cy="520" r="90" fill="#6c85ff"/>
+  </g>
+  <rect x="180" y="540" width="540" height="44" rx="22" fill="#6c85ff" opacity="0.10"/>
+</svg>

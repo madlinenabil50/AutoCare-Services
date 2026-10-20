@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700" viewBox="0 0 900 700">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f5f8fc"/>
+      <stop offset="100%" stop-color="#edf4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="700" fill="url(#bg)"/>
+  <rect x="70" y="70" width="760" height="560" rx="34" fill="#ffffff" stroke="#3c4d62" stroke-width="4"/>
+  <text x="450" y="170" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="42" font-weight="700" fill="#102a43">All Season Tire</text>
+  <text x="450" y="220" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#5c6f86">225/55R17</text>
+
+  <circle cx="450" cy="330" r="165" fill="#e7edf5" stroke="#3c4d62" stroke-width="14"/>
+  <circle cx="450" cy="330" r="110" fill="#ffffff" stroke="#3c4d62" stroke-width="10"/>
+  <circle cx="450" cy="330" r="34" fill="#dfe7f3" stroke="#3c4d62" stroke-width="7"/>
+  <g stroke="#3c4d62" stroke-width="12" stroke-linecap="round">
+    <path d="M336 250 L370 230 M264 330 L286 330 M336 410 L370 470 M450 495 L450 520 M564 410 L530 470 M636 330 L614 330 M564 250 L530 230"/>
+  </g>
+
+  <g opacity="0.12">
+    <circle cx="150" cy="150" r="70" fill="#3c4d62"/>
+    <circle cx="720" cy="520" r="90" fill="#3c4d62"/>
+  </g>
+  <rect x="180" y="540" width="540" height="44" rx="22" fill="#3c4d62" opacity="0.10"/>
+</svg>
